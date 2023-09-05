@@ -616,50 +616,8 @@ input[type="radio"]+label {
 	font-size: 0.8rem;
 	font-weight: 300;
 	margin: 0 0 0.5rem 0;
-	padding-left: 2.65rem;
 	padding-right: 0.75rem;
 	position: relative;
-}
-
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	display: inline-block;
-	font-style: normal;
-	font-variant: normal;
-	text-rendering: auto;
-	line-height: 1;
-	text-transform: none !important;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-}
-
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
-	-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	border-radius: 4px;
-	border: solid 1px #ffffff;
-	content: '';
-	display: inline-block;
-	height: 1.65rem;
-	left: 0;
-	line-height: 1.65rem;
-	position: absolute;
-	text-align: center;
-	top: -0.15rem;
-	width: 1.65rem;
-}
-
-input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+label:before {
-	background: #ffffff !important;
-	border-color: #ffffff !important;
-	color: #1b1f22;
-	content: '\f00c';
 }
 
 input[type="checkbox"]:focus+label:before,
@@ -1687,7 +1645,7 @@ body.is-preload #header .content .inner {
 	transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 	padding: 4.5rem 2.5rem 1.5rem 2.5rem;
 	position: relative;
-	width: 60rem;
+	width: 70rem;
 	max-width: 100%;
 	background-color: transparent;
 	border-radius: 4px;
@@ -2186,60 +2144,81 @@ body {
 	}
 }
 
-.tabset>input[type="radio"] {
+.tabset > input[type="radio"] {
 	position: absolute;
 	left: -200vw;
-}
-
-.tabset .tab-panel {
+  }
+  
+  .tabset .tab-panel {
 	display: none;
-}
-
-.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
-.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
-.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
-.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
-.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
-.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+  }
+  
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+  .tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+  .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
 	display: block;
-}
-
-body {
+  }
+  
+  body {
 	font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
 	color: #ffffff;
 	font-weight: 300;
-}
-
-.tabset>label {
+  }
+  
+  .tabset > label {
 	position: relative;
 	display: inline-block;
-	padding-bottom: 10px;
+	padding: 15px 15px 25px;
 	border: 1px solid transparent;
 	border-bottom: 0;
 	cursor: pointer;
 	font-weight: 600;
-}
-
-
-input:focus-visible+label {
+  }
+  
+  .tabset > label::after {
+	position: relative;
+	left: 15px;
+	bottom: 10px;
+	width: 22px;
+	height: 4px;
+	background: #8d8d8d;
+  }
+  
+  input:focus-visible + label {
+	outline: 2px solid blue;
 	border-radius: 3px;
-}
-
-.tabset>input:checked+label {
+  }
+  
+  .tabset > label:hover,
+  .tabset > input:focus + label,
+  .tabset > input:checked + label {
+	color: blue;
+  }
+  
+  .tabset > label:hover::after,
+  .tabset > input:focus + label::after,
+  .tabset > input:checked + label::after {
+	background: blue;
+  }
+  
+  .tabset > input:checked + label {
 	margin-bottom: -1px;
-}
-
-.tab-panel {
-	padding-top: 1rem;
-	border-top: 1px solid #8d8d8d;
-}
-
-*,
-*:before,
-*:after {
+  }
+  
+  .tab-panel {
+	padding: 30px 0;
+	border-top: 1px solid #ccc;
+  }
+  
+  *,
+  *:before,
+  *:after {
 	box-sizing: border-box;
-}
-
-.tabset {
+  }
+    
+  .tabset {
 	max-width: 65em;
-}
+  }
