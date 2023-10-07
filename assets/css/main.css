@@ -2195,13 +2195,13 @@ body {
   .tabset > label:hover,
   .tabset > input:focus + label,
   .tabset > input:checked + label {
-	color: blue;
+	color: yellow;
   }
   
   .tabset > label:hover::after,
   .tabset > input:focus + label::after,
   .tabset > input:checked + label::after {
-	background: blue;
+	background: red;
   }
   
   .tabset > input:checked + label {

@@ -216,14 +216,36 @@
 			<article id="gitkaggle">
 				<h2 class="major">Kaggle Projects</h2><br>
 				<div class="tabset">
-					<input type="radio" name="tabset" id="tab_3" aria-controls="case_3" checked><label for="tab_3">3. Jamboree Education - Linear Regression
-						EDA</label>
-					<input type="radio" name="tabset" id="tab_2" aria-controls="case_2" checked><label for="tab_2">2. Aerofit Treadmill - EDA
-						EDA</label>
-					<input type="radio" name="tabset" id="tab_1" aria-controls="case_1" checked><label for="tab_1">1. Netflix TV/ show - EDA
-						EDA</label>
+					<input type="radio" name="tabset" id="tab_4" aria-controls="case_4" checked><label for="tab_4">4. LoanTap - Logistic Regression	ML</label>
+					<input type="radio" name="tabset" id="tab_3" aria-controls="case_3" checked><label for="tab_3">3. Jamboree Education - Linear Regression ML</label>
+					<input type="radio" name="tabset" id="tab_2" aria-controls="case_2" checked><label for="tab_2">2. Aerofit Treadmill - EDA</label>
+					<input type="radio" name="tabset" id="tab_1" aria-controls="case_1" checked><label for="tab_1">1. Netflix TV/ show - EDA</label>
 			
 					<div class="tab-panels">
+						<!--new  <section> -->
+							<section id="case_4" class="tab-panel">
+								<h5 class="miner">4. LoanTap - Logistic Regression</h5>
+								<ul class="icons">
+									<a href="https://www.kaggle.com/code/gokulraajvelu/loantap-logisticregression" target="_blank"
+										class="icon brands fa-kaggle"><span class="resumelabel"> - kaggle</span></a>
+								</ul>
+								<p>LoanTap is an online platform committed to delivering customized loan products to millennials. 
+									They innovate in an otherwise dull loan segment, to deliver instant, flexible loans on consumer 
+									friendly terms to salaried professionals and businessmen. 
+									This case study will focus on the underwriting process behind Personal Loan only</p><br>
+								<center><img src="images/loantap_img1.png" width="50%"><img src="images/loantap_img2.png" width="48.13%"></center>
+								<br><p>
+									from this we can see that the pression towords 1 is very good and 0 is good
+									and recall towards 1 is very good and 0 is average
+									f1 score towards 1 is very good and 0 is good.
+									this is because of we have a unequal balance of data.
+									we can have tried all the encoding that has to be and picked the most effective one as for this analysis for
+									catagorical data we are good with target encoding. may be we should have done this to all catagorical columns.
+									the data is biased towrods the one catagory so that we can perform the SMOTE analysis to make it normal and
+									unbiased.
+									and can used VIF technique to make the high correlated columns and to remove multi collinearity.
+								</p>
+							</section>
 						<!--new  <section> -->
 							<section id="case_3" class="tab-panel">
 								<h5 class="miner">3. Jamboree Education - Linear Regression</h5>
