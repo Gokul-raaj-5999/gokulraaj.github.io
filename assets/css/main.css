@@ -2222,3 +2222,15 @@ body {
   .tabset {
 	max-width: 65em;
   }
+
+  .projectlisting {
+	font-weight: bold;
+	font-size: larger;
+	margin-bottom: 10px;
+	cursor: pointer;
+  }
+  .detailslisting {
+	display: none;
+	padding: 10px;
+  }
+  
