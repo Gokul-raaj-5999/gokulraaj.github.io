@@ -1772,6 +1772,11 @@ body.is-preload #footer {
 	margin-left: 40px;
 }
 
+.tabright {
+	display: inline-block;
+	margin-right: 40px;
+}
+
 .pb5rem {
 	padding-bottom: 5rem;
 }
@@ -2233,4 +2238,3 @@ body {
 	display: none;
 	padding: 10px;
   }
-  
