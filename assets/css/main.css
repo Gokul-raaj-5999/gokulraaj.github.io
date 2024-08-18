@@ -1833,7 +1833,7 @@ p {
 
 .d-flex-2 {
 	display: flex;
-	align-items: center;
+	align-items: right;
 }
 
 .timeline-area {
@@ -1893,7 +1893,7 @@ p {
 }
 
 .single-timeline:nth-child(even) .timeline-text span {
-	text-align: right;
+	text-align: left;
 }
 
 .t-square {
@@ -1951,7 +1951,7 @@ p {
 	}
 
 	.single-timeline:nth-child(even) .timeline-text span {
-		text-align: left !important;
+		text-align: left;
 	}
 }
 
